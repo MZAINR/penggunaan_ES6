@@ -1,0 +1,1 @@
+# penggunaan_ES6
