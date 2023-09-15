@@ -1,13 +1,15 @@
 class DataSource {
 
-  searchClub(keyword) {
-    const filteredClubs = clubs.filter(club => club.name.toUpperCase().includes(keyword.toUpperCase()));
-  
-    if (filteredClubs) {
-      this.onSuccess(filteredClubs);
-    } else {
-      this.onFailed(`${keyword} is not found`)
-    }
+  static searchClub(keyword) {
+    return new Promise((resolve, reject) => {
+      const filteredClubs = clubs.filter(club => club.name.toUpperCase().includes(keyword.toUpperCase()));
+      
+      if (filteredClubs) {
+        this.onSuccess(filteredClubs);
+      } else {
+        this.onFailed(`${keyword} is not found`)
+      }
+    });
   }
 }
 
