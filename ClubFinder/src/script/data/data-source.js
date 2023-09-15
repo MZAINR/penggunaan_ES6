@@ -1,9 +1,4 @@
 class DataSource {
-  constructor (onSuccess, onFailed) {
-    this.onSuccess = onSuccess;
-    this.onFailed = onFailed;
-  }
-
 
   searchClub(keyword) {
     const filteredClubs = clubs.filter(club => club.name.toUpperCase().includes(keyword.toUpperCase()));
