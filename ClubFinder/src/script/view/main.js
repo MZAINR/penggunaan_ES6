@@ -36,3 +36,5 @@ const main = () => {
 
   buttonSearchElement.addEventListener('click', onButtonSearchClicked);
 };
+
+export default main;
