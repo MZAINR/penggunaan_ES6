@@ -13,6 +13,8 @@ class DataSource {
   }
 }
 
+export default DataSource;
+
 // DataSource.prototype.searchClub = function (keyword) {
 //   const filteredClubs = clubs.filter((club) => {
 //     return club.name.toUpperCase().includes(keyword.toUpperCase());
