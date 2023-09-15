@@ -5,9 +5,9 @@ class DataSource {
       const filteredClubs = clubs.filter(club => club.name.toUpperCase().includes(keyword.toUpperCase()));
       
       if (filteredClubs) {
-        this.onSuccess(filteredClubs);
+        resolve(filteredClubs);
       } else {
-        this.onFailed(`${keyword} is not found`)
+        reject(`${keyword} is not found`)
       }
     });
   }
