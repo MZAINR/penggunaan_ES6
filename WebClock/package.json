@@ -12,6 +12,7 @@
     "moment": "^2.29.4"
   },
   "devDependencies": {
+    "jquery": "^3.7.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
