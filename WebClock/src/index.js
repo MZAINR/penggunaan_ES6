@@ -1,4 +1,4 @@
-import $ from 'jquery';
+import $ from 'jQuery';
 import moment from 'moment';
 
 const displayTime = () => {
